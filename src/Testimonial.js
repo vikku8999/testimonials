@@ -15,7 +15,7 @@ const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowBackIos style={{ color: "gray", fontSize: "45px" }} />
+      <ArrowBackIos style={{ color: "gray", fontSize: "45px"  }} />
     </div>
   );
 };
@@ -40,9 +40,9 @@ const Testimonial = () => {
   return (
     <div
       className="testimonial"
-      style={{ display: "flex", justifyContent: "center", marginTop: 60 , marginBottom: 52 }}
+      style={{ display: "flex", justifyContent: "center", marginTop: 60 , marginBottom: 60 }}
     >
-      <div style={{ height:"50" , width: "40%", textAlign: "center" }}>
+      <div className="boxx" style={{ height: "30%" , width: "80%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 60 }}>TESTIMONIALS</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
         {dataArray?.map((noteItem, index) => {
@@ -92,7 +92,7 @@ const Card = (user) => {
         {user.message}
       </p>
       <p>{user.lorem}</p>
-      <Box component="fieldset" mb={3} borderColor="transparent">
+      <Box component="fieldset" mb={2} borderColor="transparent">
         <Rating name="read-only" value={user.rating} readOnly />
       </Box>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>

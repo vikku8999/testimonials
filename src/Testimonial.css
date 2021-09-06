@@ -1,3 +1,11 @@
+
+.boxx{
+  
+  box-shadow: 0 10px 20px -5px rgb(83, 47, 240);
+
+}
+
+
 .testimonial .slick-arrow.slick-prev,
 .testimonial .slick-arrow.slick-next {
   width: 40px;
@@ -19,8 +27,8 @@
   left: -70px;
 }
 .testimonial .slick-dots li button:before {
-  font-size: 15px;
+  font-size: 10px;
 }
 .testimonial .slick-dots li {
-  top: 15px;
+  top: 10px;
 }
